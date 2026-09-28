@@ -1,0 +1,23 @@
+Name		  Text
+lblTituloSplash    Sistema de Orçamentos Dev
+lblCarregando      Carregando módulos...
+prgCarregando     
+
+Login
+
+FrmLogin      Sistema de Orçamentos
+lblTitulo     Login-Sistema de Orçamentos
+lblUsuario    Usuário:
+lblSenha      Senha:
+txtUsuario 
+txtSenha
+btnEntrar      Entrar
+
+
+Menu
+
+frmMenu    		Menu Principal-Orçamentos
+lblBoasVindas   	Bem-Vindo ao Sistema de Orçamentos
+btnNovoOrcamento 	Novo Orçamento
+btnRelatorios 		Relatórios
+btnSair			Sair
