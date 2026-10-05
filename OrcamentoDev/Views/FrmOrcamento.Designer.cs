@@ -28,12 +28,160 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmOrcamento";
+            btnCalcular = new Button();
+            lblCliente = new Label();
+            txtCliente = new TextBox();
+            chkUrgente = new CheckBox();
+            lblProjeto = new Label();
+            lblHoras = new Label();
+            lblValorHora = new Label();
+            lblResultado = new Label();
+            txtValorHora = new TextBox();
+            txtHora = new TextBox();
+            txtProjeto = new TextBox();
+            btnSalvar = new Button();
+            SuspendLayout();
+            // 
+            // btnCalcular
+            // 
+            btnCalcular.Location = new Point(213, 368);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(153, 35);
+            btnCalcular.TabIndex = 0;
+            btnCalcular.Text = "Caclular Valor";
+            btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
+            // 
+            // lblCliente
+            // 
+            lblCliente.AutoSize = true;
+            lblCliente.Location = new Point(219, 42);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(100, 15);
+            lblCliente.TabIndex = 1;
+            lblCliente.Text = "Nome do Cliente:";
+            // 
+            // txtCliente
+            // 
+            txtCliente.Location = new Point(341, 39);
+            txtCliente.Name = "txtCliente";
+            txtCliente.Size = new Size(242, 23);
+            txtCliente.TabIndex = 2;
+            // 
+            // chkUrgente
+            // 
+            chkUrgente.AutoSize = true;
+            chkUrgente.Location = new Point(219, 278);
+            chkUrgente.Name = "chkUrgente";
+            chkUrgente.Size = new Size(211, 19);
+            chkUrgente.TabIndex = 3;
+            chkUrgente.Text = "Projeto Urgente (Adicional de 20%)";
+            chkUrgente.UseVisualStyleBackColor = true;
+            // 
+            // lblProjeto
+            // 
+            lblProjeto.AutoSize = true;
+            lblProjeto.Location = new Point(219, 82);
+            lblProjeto.Name = "lblProjeto";
+            lblProjeto.Size = new Size(116, 15);
+            lblProjeto.TabIndex = 4;
+            lblProjeto.Text = "Descrição do Projeto";
+            // 
+            // lblHoras
+            // 
+            lblHoras.AutoSize = true;
+            lblHoras.Location = new Point(219, 128);
+            lblHoras.Name = "lblHoras";
+            lblHoras.Size = new Size(94, 15);
+            lblHoras.TabIndex = 5;
+            lblHoras.Text = "Horas Estimadas";
+            // 
+            // lblValorHora
+            // 
+            lblValorHora.AutoSize = true;
+            lblValorHora.Location = new Point(219, 164);
+            lblValorHora.Name = "lblValorHora";
+            lblValorHora.Size = new Size(89, 15);
+            lblValorHora.TabIndex = 6;
+            lblValorHora.Text = "Valor Hora (R$):";
+            // 
+            // lblResultado
+            // 
+            lblResultado.AutoSize = true;
+            lblResultado.Location = new Point(219, 222);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(105, 15);
+            lblResultado.TabIndex = 7;
+            lblResultado.Text = "Valor Total: R$ 0,00";
+            // 
+            // txtValorHora
+            // 
+            txtValorHora.Location = new Point(341, 164);
+            txtValorHora.Name = "txtValorHora";
+            txtValorHora.Size = new Size(242, 23);
+            txtValorHora.TabIndex = 9;
+            // 
+            // txtHora
+            // 
+            txtHora.Location = new Point(341, 128);
+            txtHora.Name = "txtHora";
+            txtHora.Size = new Size(242, 23);
+            txtHora.TabIndex = 10;
+            // 
+            // txtProjeto
+            // 
+            txtProjeto.Location = new Point(341, 79);
+            txtProjeto.Name = "txtProjeto";
+            txtProjeto.Size = new Size(242, 23);
+            txtProjeto.TabIndex = 11;
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.Location = new Point(385, 368);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(155, 35);
+            btnSalvar.TabIndex = 12;
+            btnSalvar.Text = "Salvar Orçamento";
+            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
+            // 
+            // FrmOrcamento
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnSalvar);
+            Controls.Add(txtProjeto);
+            Controls.Add(txtHora);
+            Controls.Add(txtValorHora);
+            Controls.Add(lblResultado);
+            Controls.Add(lblValorHora);
+            Controls.Add(lblHoras);
+            Controls.Add(lblProjeto);
+            Controls.Add(chkUrgente);
+            Controls.Add(txtCliente);
+            Controls.Add(lblCliente);
+            Controls.Add(btnCalcular);
+            Name = "FrmOrcamento";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Novo Orçamento de Desenvolvimento";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnCalcular;
+        private Label lblCliente;
+        private TextBox txtCliente;
+        private CheckBox chkUrgente;
+        private Label lblProjeto;
+        private Label lblHoras;
+        private Label lblValorHora;
+        private Label lblResultado;
+        private TextBox txtValorHora;
+        private TextBox txtHora;
+        private TextBox txtProjeto;
+        private Button btnSalvar;
     }
 }
