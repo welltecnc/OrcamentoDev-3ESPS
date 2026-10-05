@@ -44,26 +44,30 @@
             // 
             // btnCalcular
             // 
+            btnCalcular.BackColor = Color.Black;
+            btnCalcular.Font = new Font("Segoe UI", 12F);
+            btnCalcular.ForeColor = Color.Yellow;
             btnCalcular.Location = new Point(213, 368);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(153, 35);
+            btnCalcular.Size = new Size(187, 45);
             btnCalcular.TabIndex = 0;
             btnCalcular.Text = "Caclular Valor";
-            btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.UseVisualStyleBackColor = false;
             btnCalcular.Click += btnCalcular_Click;
             // 
             // lblCliente
             // 
             lblCliente.AutoSize = true;
+            lblCliente.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblCliente.Location = new Point(219, 42);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(100, 15);
+            lblCliente.Size = new Size(143, 21);
             lblCliente.TabIndex = 1;
             lblCliente.Text = "Nome do Cliente:";
             // 
             // txtCliente
             // 
-            txtCliente.Location = new Point(341, 39);
+            txtCliente.Location = new Point(393, 40);
             txtCliente.Name = "txtCliente";
             txtCliente.Size = new Size(242, 23);
             txtCliente.TabIndex = 2;
@@ -71,9 +75,11 @@
             // chkUrgente
             // 
             chkUrgente.AutoSize = true;
+            chkUrgente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkUrgente.ForeColor = Color.FromArgb(0, 0, 192);
             chkUrgente.Location = new Point(219, 278);
             chkUrgente.Name = "chkUrgente";
-            chkUrgente.Size = new Size(211, 19);
+            chkUrgente.Size = new Size(273, 25);
             chkUrgente.TabIndex = 3;
             chkUrgente.Text = "Projeto Urgente (Adicional de 20%)";
             chkUrgente.UseVisualStyleBackColor = true;
@@ -81,74 +87,83 @@
             // lblProjeto
             // 
             lblProjeto.AutoSize = true;
+            lblProjeto.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblProjeto.Location = new Point(219, 82);
             lblProjeto.Name = "lblProjeto";
-            lblProjeto.Size = new Size(116, 15);
+            lblProjeto.Size = new Size(168, 21);
             lblProjeto.TabIndex = 4;
             lblProjeto.Text = "Descrição do Projeto";
             // 
             // lblHoras
             // 
             lblHoras.AutoSize = true;
+            lblHoras.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblHoras.Location = new Point(219, 128);
             lblHoras.Name = "lblHoras";
-            lblHoras.Size = new Size(94, 15);
+            lblHoras.Size = new Size(135, 21);
             lblHoras.TabIndex = 5;
             lblHoras.Text = "Horas Estimadas";
             // 
             // lblValorHora
             // 
             lblValorHora.AutoSize = true;
+            lblValorHora.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             lblValorHora.Location = new Point(219, 164);
             lblValorHora.Name = "lblValorHora";
-            lblValorHora.Size = new Size(89, 15);
+            lblValorHora.Size = new Size(130, 21);
             lblValorHora.TabIndex = 6;
             lblValorHora.Text = "Valor Hora (R$):";
             // 
             // lblResultado
             // 
             lblResultado.AutoSize = true;
+            lblResultado.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblResultado.ForeColor = Color.FromArgb(0, 192, 0);
             lblResultado.Location = new Point(219, 222);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(105, 15);
+            lblResultado.Size = new Size(236, 32);
             lblResultado.TabIndex = 7;
             lblResultado.Text = "Valor Total: R$ 0,00";
             // 
             // txtValorHora
             // 
-            txtValorHora.Location = new Point(341, 164);
+            txtValorHora.Location = new Point(393, 165);
             txtValorHora.Name = "txtValorHora";
             txtValorHora.Size = new Size(242, 23);
             txtValorHora.TabIndex = 9;
             // 
             // txtHora
             // 
-            txtHora.Location = new Point(341, 128);
+            txtHora.Location = new Point(393, 129);
             txtHora.Name = "txtHora";
             txtHora.Size = new Size(242, 23);
             txtHora.TabIndex = 10;
             // 
             // txtProjeto
             // 
-            txtProjeto.Location = new Point(341, 79);
+            txtProjeto.Location = new Point(393, 80);
             txtProjeto.Name = "txtProjeto";
             txtProjeto.Size = new Size(242, 23);
             txtProjeto.TabIndex = 11;
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(385, 368);
+            btnSalvar.BackColor = Color.Black;
+            btnSalvar.Font = new Font("Segoe UI", 12F);
+            btnSalvar.ForeColor = Color.Yellow;
+            btnSalvar.Location = new Point(422, 368);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(155, 35);
+            btnSalvar.Size = new Size(189, 45);
             btnSalvar.TabIndex = 12;
             btnSalvar.Text = "Salvar Orçamento";
-            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
             // FrmOrcamento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Silver;
             ClientSize = new Size(800, 450);
             Controls.Add(btnSalvar);
             Controls.Add(txtProjeto);
